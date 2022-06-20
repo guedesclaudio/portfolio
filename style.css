@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.topo-menu {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+
+li a {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    margin: 0 10px;
+}
