@@ -29,3 +29,88 @@ li a {
     font-size: 18px;
     margin: 0 10px;
 }
+
+.content {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.escondido {
+    display: none;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 420px;
+}
+
+.presentation {
+    width: 600px;
+    height: 300px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation h1 {
+    font-size: 60px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.presentation h2 {
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    color: grey;
+    margin-top: 35px;
+}
+
+.presentation p {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    color: grey;
+    margin-top: 15px;
+}
+
+.lamp-img img{
+    width: 350px;
+    transition: all 2s linear;
+    cursor: pointer;
+}
+
+.lamp-img img:hover {
+    width: 400px;
+}
+
+.presentation-text {
+    width: 600px;
+    height: 200px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.presentation-text h2{
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: grey;
+    margin-bottom: 0px;
+}
+
+.presentation-text h3{
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    color: rgb(115, 187, 115);
+    margin-top: 20px;
+    letter-spacing: 2pt;
+}
