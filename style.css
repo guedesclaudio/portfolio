@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
 
+@keyframes img-animation {
+    from {
+        border-color: white;
+        color: white;
+    }
+
+    to {
+        border-color: rgb(83, 82, 82);   
+        color: rgb(83, 82, 82);
+    }
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -31,7 +43,6 @@ li a {
 }
 
 .content {
-    margin-top: 100px;
     width: 100%;
 }
 
@@ -40,16 +51,18 @@ li a {
 }
 
 .sobre {
+    padding-top: 250px;
+    padding-bottom: 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 420px;
+    min-height: 1000px;
+    border-bottom: 1px solid black;
 }
 
 .presentation {
     width: 600px;
     height: 300px;
-    margin-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +93,7 @@ li a {
 
 .lamp-img img{
     width: 350px;
-    transition: all 2s linear;
+    transition: all 1s linear;
     cursor: pointer;
 }
 
@@ -103,7 +116,6 @@ li a {
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
     color: grey;
-    margin-bottom: 0px;
 }
 
 .presentation-text h3{
@@ -111,6 +123,90 @@ li a {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     color: rgb(115, 187, 115);
-    margin-top: 20px;
+    margin-top: 6px;
     letter-spacing: 2pt;
+}
+
+.profile {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-text {
+    width: 700px;
+}
+
+.profile p {
+    font-size: 26px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: justify;
+    animation: img-animation 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.img-profile {
+    border: 2px solid white;
+    margin-left: 80px;
+    animation: img-animation 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.profile img:hover {
+    transform: rotateY(180deg);
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+}
+
+.img-text {
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2pt;
+    animation: img-animation 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.projects {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-projects h1 {
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.project {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+    opacity: 0.6;
+}
+
+.project:hover {
+    opacity: 1;
 }
