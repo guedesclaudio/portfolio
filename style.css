@@ -161,6 +161,10 @@ li a {
     position: relative;
 }
 
+.move {
+    transform: rotateY(180deg);
+}
+
 .profile img:hover {
     transform: rotateY(180deg);
 }
@@ -184,12 +188,14 @@ li a {
 
 .projects {
     margin: 60px 0;
+    min-height: 500px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: space-between;
+    flex-wrap: wrap;
 }
 
-.title-projects h1 {
+.title-projects h1, .title-stack h1 {
     font-size: 40px;
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
@@ -203,10 +209,112 @@ li a {
     border: 1px solid black;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    background-color: rgb(224, 224, 224);
-    opacity: 0.6;
+    background-color: black;
+    margin-bottom: 20px;
 }
 
 .project:hover {
-    opacity: 1;
+    opacity: 0.8;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project p {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.project h4 {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-align: justify;
+    color: white;
+    margin: 0 10px;
+}
+
+.my-carousel {
+    margin: 40px auto;
+    width: 1000px;
+    height: 500px;
+}
+
+.image-carousel {
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+}
+
+.image-carousel:nth-child(3) {
+    background-color: white;
+}
+
+.image-carousel img {
+    width: 1000px;
+    height: 500px;
+}
+
+.image-carousel h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.stack {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.stack-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack-list img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+footer {
+    height: 140px;
+    background-color: #313131;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 20px 0;
+}
+
+.contact ion-icon {
+    font-size: 40px;
+}
+
+.contact div {
+    margin: 0 20px;
+}
+
+.credits {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
 }

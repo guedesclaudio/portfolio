@@ -10,52 +10,52 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        <nav class="navbar navbar-expand-sm navbar-dark topo-menu fixed-top">
-            <a href="index.html" class="navbar-brand logo"
-              >&lsaquo;claudioguedes/&rsaquo;</a
-            >
-      
-            <!--Menu hamburguer-->
-      
-            <button
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#nav-target"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <!--navegação-->
-            <div class="collapse navbar-collapse" id="nav-target">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Stack</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><ion-icon name="mail-sharp"></ion-icon></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><ion-icon name="logo-github"></ion-icon></a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-
         <div class="content">
+            <nav class="navbar navbar-expand-sm navbar-dark topo-menu fixed-top">
+                <a href="#presentation" class="navbar-brand logo"
+                >&lsaquo;claudioguedes/&rsaquo;</a
+                >
+        
+                <!--Menu hamburguer-->
+        
+                <button
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#nav-target"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!--navegação-->
+                <div class="collapse navbar-collapse" id="nav-target">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a href="#profile" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#stack" class="nav-link">Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/claudio-guedes-0144b91a5/" class="nav-link" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:cgsarmentosilva@gmail.com?subject=subject&cc=cc@gmail.com" class="nav-link" target="_blank"><ion-icon name="mail-sharp"></ion-icon></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/guedesclaudio" class="nav-link" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+
+        
             <div class="sobre">
-                <div class="presentation">
+                <div class="presentation" id="presentation">
                     <div>
-                        <h1>Seja bem vindo</h1>
+                        <h1 onclick="scrollView(this)">Seja bem vindo</h1>
                         <h2>Eu sou o Claudio Guedes</h2>
                         <p>Desenvolvedor de Software</p>
                     </div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="profile">
+            <div class="profile Sobre" id="profile">
                 <div class="profile-text">
                     <p>Olá, meu nome é Claudio Guedes, tenho 22 anos e moro em Niterói, Rio de Janeiro.
                         Atualmente estou cursando Oceanografia na UERJ com foco na área Física.
@@ -84,50 +84,230 @@
                         Desde então resolvi migrar de área e me dedicar ao mundo do desenvolvimento de software.
                         Ingressei no curso de desenvolvimento full stack da Driven Education e estou evoluindo cada vez mais.
                         Com o curso de Oceanografia pude ter uma boa base de algumas áreas como cálculo, estatística, física e lógica de programação.
-                        Dessa forma, consegui aproveitar parte do meu conhecimento e aplicar nessa minha nova caminhada
+                        Dessa forma, consegui aproveitar grande parte do meu conhecimento e aplicar nessa minha nova caminhada
                     </p>
                 </div>
                 <div class="img-profile">
-                    <img src="https://i.pinimg.com/736x/cc/e0/bb/cce0bb12e55632e2cbd5f50e7444ee36.jpg" alt="">
+                    <img src="https://i.pinimg.com/736x/cc/e0/bb/cce0bb12e55632e2cbd5f50e7444ee36.jpg" class="move">
                     <div class="img-text">
                         &lsaquo;Let's bora ?/&rsaquo;
                     </div>
                 </div>
             </div>
 
+            
             <div class="">
 
-                <div class="title-projects">
+                <div class="title-projects" id="projects">
                     <h1>Meus projetos</h1>
                 </div>
 
                 <div class="projects">
-                    <div class="project">
-                        <p>
-                            Projeto Instagram
-                        </p>
+                    <a href="https://guedesclaudio.github.io/projeto2-instagram/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Instagram
+                            </p>
+                            <h4 class="escondido">
+                                Criação da página principal do Instagram de forma estática utilizando somente HTML5 e CSS3.
+                                Design responsivo para todos os tamanhos de tela.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/projeto1-globe.com/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Globo.com
+                            </p>
+                            <h4 class="escondido">
+                                Criação da página principal do site Globo.com de forma estática utilizando somente HTML5 e CSS3.
+                                Design responsivo para alguns tamanhos de tela.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/projeto3-driveneats/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Driven Eats
+                            </p>
+                            <h4 class="escondido">
+                                Criação de um app web de fast food exclusivo para mobile utilizando HTML5, CSS3 e JavaScript.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/projeto4-parrotscardgame/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Parrot card game
+                            </p>
+                            <h4 class="escondido">
+                                Parrot Game é um jogo de memória com layout simples, mas que possui uma lógica interessante para fazer movimentar o jogo.
+                                Utilizando JavaScript puro.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/projeto6_buzzquizz/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto BuzzQuizz
+                            </p>
+                            <h4 class="escondido">
+                                O projeto BuzzQuizz é um site de criação de quizzes dinâmicos ligados a uma API para armazenamento de dados, e local storage também.
+                                Foi desenvolvido em equipe com mais dois colegas utilizando versionamento Git e GitHub.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/Editor-de-texto/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Editor de texto
+                            </p>
+                            <h4 class="escondido">
+                                Editor de texto para configurar letras maiúsculas e minúsculas. Além de possuir contador de caracteres, palavras e frases.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/Lexus/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Lexus
+                            </p>
+                            <h4 class="escondido">
+                                Site fictício para uma marca de bicicletas elétricas utilizando HTML5, CSS3 e JavaScript.
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="https://guedesclaudio.github.io/projeto5-batepapouol/" target="_blank">
+                        <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
+                            <p>
+                                Projeto Bate papo UOL
+                            </p>
+                            <h4 class="escondido">
+                                Criação de uma sala de bate-papo online inspirada na UOL.
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div id="carousel-controles" class="carousel slide my-carousel" data-ride="carousel"><!--Carousel-->
+
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel-controles" data-slide-to="0"></li>
+                    <li data-target="#carousel-controles" data-slide-to="1"></li>
+                    <li data-target="#carousel-controles" data-slide-to="2"></li>
+                    <li data-target="#carousel-controles" data-slide-to="3" class="li-instagram"></li>
+                    <li data-target="#carousel-controles" data-slide-to="4"></li>
+                    <li data-target="#carousel-controles" data-slide-to="5"></li>
+                    <li data-target="#carousel-controles" data-slide-to="6"></li>
+                </ol>
+
+                <div class="carousel-inner"><!--Inner-->
+                
+                    <div class="carousel-item active image-carousel">
+                        <a href="https://guedesclaudio.github.io/projeto1-globe.com/" target="_blank">
+                            <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/globocom_opengraph.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Globo.com</h3>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project">
-                        <p>
-                            Projeto Globo.com
-                        </p>
-                        
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/projeto3-driveneats/" target="_blank">
+                            <img src="img/Driven Eats.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Driven Eats</h3>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project">
-                        <p>
-                            Projeto Driven Eats
-                        </p>
-                        
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/projeto2-instagram/" target="_blank">
+                            <img src="img/insta.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Instagram</h3>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project">
-                        <p>
-                            Projeto Parrot card game
-                        </p>
-                        
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/projeto5-batepapouol/" target="_blank">
+                            <img src="img/uol.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Bate Papo UOL</h3>
+                            </div>
+                        </a>
                     </div>
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/Lexus/" target="_blank">
+                            <img src="img/lexus.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Lexus</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/Editor-de-texto/" target="_blank">
+                            <img src="img/Editor de texto.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto Editor de texto</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item image-carousel">
+                        <a href="https://guedesclaudio.github.io/projeto6_buzzquizz/" target="_blank">
+                            <img src="img/BuzzQuizz.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3>Projeto BuzzQuizz</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div><!--/Inner-->
+
+
+                <!--Controles-->
+                <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div><!--/Carousel-->
+
+            <div class="stack" id="stack">
+                <div class="title-stack">
+                    <h1>Minha Stack</h1>
+                </div>
+                <div class="stack-list">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="contact">
+                <div><ion-icon name="mail-sharp"></ion-icon></div>
+                <div><ion-icon name="logo-linkedin"></ion-icon></div>
+                <div><ion-icon name="logo-github"></ion-icon></div>
+            </div>
+            <div class="credits">&copy Claudio Guedes | 2022</div>
+        </footer>
 
         <script src="myscript.js"></script>
         
