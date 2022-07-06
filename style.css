@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
-
+/*
 @keyframes img-animation {
     from {
         border-color: white;
@@ -11,7 +11,7 @@
         color: rgb(83, 82, 82);
     }
 }
-
+*/
 a {
     text-decoration: none;
     color: white;
@@ -213,9 +213,6 @@ li a {
     margin-bottom: 20px;
 }
 
-.project:hover {
-    opacity: 0.8;
-}
 
 .project {
     display: flex;
@@ -238,6 +235,10 @@ li a {
     text-align: justify;
     color: white;
     margin: 0 10px;
+}
+
+.project:hover {
+    background-color: rgb(53, 48, 48);
 }
 
 .my-carousel {
@@ -269,7 +270,7 @@ li a {
 
 .stack {
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .stack-list {
@@ -283,6 +284,16 @@ li a {
     width: 40px;
     height: 40px;
     margin: 0 20px;
+    cursor: pointer;
+}
+
+.stack h2 {
+    min-height: 60px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
 }
 
 html {
@@ -318,3 +329,144 @@ footer {
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
 }
+
+@media (max-width:1400px) {
+    .lamp-img {
+        display: none;
+    }
+
+    .sobre {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        min-height: 500px;
+        justify-content: center;
+    }
+
+    .presentation-text {
+        display: none;
+    }
+}
+
+@media (max-width:1400px) {
+    .lamp-img {
+        display: none;
+    }
+
+    .sobre {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        min-height: 500px;
+        justify-content: center;
+    }
+
+    .presentation-text {
+        display: none;
+    }
+}
+
+@media (max-width:1300px) {
+
+    .profile {
+        min-height: 600px;
+    }
+
+    .profile-text p {
+        font-size: 16px;
+    }
+
+    .img-profile img{
+        width: 400px;
+    }
+
+    .img-text {
+        display: none;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .my-carousel {
+        margin: 40px auto;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .image-carousel {
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+
+    .stack-list {
+        flex-wrap: wrap;
+    }
+
+    .stack-list img{
+        margin-top: 10px;
+    }
+
+    .carousel-item h3 {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-text {
+        width: 90%;
+    }
+
+    .img-profile {
+        margin: 40px auto;
+        width: 90%;
+    }
+
+    .img-profile img {
+        width: 100%;
+    }
+
+    .presentation {
+        width: 100%;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width:600px) {
+    .carousel-inner, #carousel-controles {
+        display: none;
+    }
+
+    .project {
+        width: 300px;
+    }
+
+    .title-projects h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .presentation h1, .presentation h2, .presentation p{
+        text-align: center;
+    }
+
+    .stack h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .stack img {
+        width: 30px;
+        height: 30px;
+    }
+}
+

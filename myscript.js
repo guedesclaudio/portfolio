@@ -8,16 +8,13 @@ function encobreTexto(element) {
     element.querySelector("h4").classList.add("escondido")
 }
 
-function scrollView () {
-    //const textClass = element.querySelector("a").innerHTML
-    //console.log(textClass)
-    /*const elementView = document.querySelector('.profile')
-    console.log(elementView)
-    elementView.scrollIntoView()*/
-    const elementoQueQueroQueApareca = document.querySelector('.profile')
-    //const aparece = elementoQueQueroQueApareca.querySelector('.profile')
-    elementoQueQueroQueApareca.scrollIntoView(true);
-    console.log(elementoQueQueroQueApareca)
+setInterval(() => document.querySelector(".img-profile img").classList.toggle("move"), 300)
+
+function stackOn(element) {
+    const stackName = element.alt
+    document.querySelector(".stack h2").innerHTML = stackName
 }
 
-setInterval(() => document.querySelector(".img-profile img").classList.toggle("move"), 300)
+function stackOff(element) {
+    document.querySelector(".stack h2").innerHTML = ""
+}
