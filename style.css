@@ -211,6 +211,7 @@ li a {
     cursor: pointer;
     background-color: black;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 
@@ -238,7 +239,7 @@ li a {
 }
 
 .project:hover {
-    background-color: rgb(53, 48, 48);
+    filter: brightness(0.4);
 }
 
 .my-carousel {
