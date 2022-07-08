@@ -366,6 +366,17 @@ h6 {
     font-weight: 700;
 }
 
+h2.on, h2.off {
+    width: 100px;
+    height: 26px;
+    margin-top: 10px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: #313131;
+    color: white;
+    border-radius: 10px;
+}
+
 @media (max-width:1400px) {
     .lamp-img {
         display: none;
@@ -477,7 +488,7 @@ h6 {
 }
 
 @media (max-width:600px) {
-    .carousel-inner, #carousel-controles {
+    .carousel-inner, #carousel-controles{
         display: none;
     }
 
@@ -503,6 +514,26 @@ h6 {
     .stack img {
         width: 30px;
         height: 30px;
+    }
+
+    .title-projects{
+        margin-left: 0;
+    }
+
+    h2.on, h2.off {
+        width: 64px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .title-projects h1 {
+        font-size: 24px;
+        margin-left: 8px;
+        
+    }
+
+    .title-projects ion-icon {
+        font-size: 20px;
     }
 }
 
