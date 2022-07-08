@@ -98,11 +98,19 @@
             
             <div class="">
 
-                <div class="title-projects" id="projects">
+                <div class="title-projects" id="projects" >
                     <h1>Meus projetos</h1>
+                    <div onclick="notViewProjects()">
+                        <ion-icon name="caret-up-outline" class="off escondido"></ion-icon>
+                        <h2 class="off escondido" >Clique para ver menos</h2>
+                    </div>
+                    <div onclick="viewProjects()">
+                        <ion-icon name="caret-down-outline" class="on"></ion-icon>
+                        <h2 class="on">Clique para ver mais</h2>
+                    </div>
                 </div>
 
-                <div class="projects">
+                <div class="projects escondido">
                     <a href="https://guedesclaudio.github.io/projeto2-instagram/" target="_blank">
                         <div class="project" onmouseover="descobreTexto(this)" onmouseout="encobreTexto(this)">
                             <p>
@@ -209,7 +217,7 @@
                         <a href="https://guedesclaudio.github.io/projeto1-globe.com/" target="_blank">
                             <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/globocom_opengraph.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Globo.com</h3>
+                                <h6>Projeto Globo.com</h6>
                             </div>
                         </a>
                     </div>
@@ -218,7 +226,7 @@
                         <a href="https://guedesclaudio.github.io/projeto3-driveneats/" target="_blank">
                             <img src="img/Driven Eats.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Driven Eats</h3>
+                                <h6>Projeto Driven Eats</h6>
                             </div>
                         </a>
                     </div>
@@ -227,7 +235,7 @@
                         <a href="https://guedesclaudio.github.io/projeto2-instagram/" target="_blank">
                             <img src="img/insta.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Instagram</h3>
+                                <h6>Projeto Instagram</h6>
                             </div>
                         </a>
                     </div>
@@ -236,7 +244,7 @@
                         <a href="https://guedesclaudio.github.io/projeto5-batepapouol/" target="_blank">
                             <img src="img/uol.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Bate Papo UOL</h3>
+                                <h6>Projeto Bate Papo UOL</h6>
                             </div>
                         </a>
                     </div>
@@ -245,7 +253,7 @@
                         <a href="https://guedesclaudio.github.io/Lexus/" target="_blank">
                             <img src="img/lexus.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Lexus</h3>
+                                <h6>Projeto Lexus</h6>
                             </div>
                         </a>
                     </div>
@@ -254,7 +262,7 @@
                         <a href="https://guedesclaudio.github.io/Editor-de-texto/" target="_blank">
                             <img src="img/Editor de texto.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto Editor de texto</h3>
+                                <h6>Projeto Editor de texto</h6>
                             </div>
                         </a>
                     </div>
@@ -263,7 +271,7 @@
                         <a href="https://guedesclaudio.github.io/projeto6_buzzquizz/" target="_blank">
                             <img src="img/BuzzQuizz.png" class="img-fluid">
                             <div class="carousel-caption">
-                                <h3>Projeto BuzzQuizz</h3>
+                                <h6>Projeto BuzzQuizz</h6>
                             </div>
                         </a>
                     </div>

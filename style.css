@@ -46,10 +46,6 @@ li a {
     width: 100%;
 }
 
-.escondido {
-    display: none;
-}
-
 .sobre {
     padding-top: 250px;
     padding-bottom: 250px;
@@ -193,9 +189,52 @@ li a {
     justify-content: space-evenly;
     align-items: space-between;
     flex-wrap: wrap;
+    margin-top: 0px;
+    transition: all .2s linear;
 }
 
-.title-projects h1, .title-stack h1 {
+.projects-animation {
+    margin-top: 60px;
+}
+
+.projects-desanimation {
+    margin-top: 0;
+}
+
+.title-projects {
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.title-projects ion-icon {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.title-projects h1 {
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+} 
+
+.title-projects h2 {
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+.title-projects div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title-stack h1 {
     font-size: 40px;
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
@@ -212,13 +251,10 @@ li a {
     background-color: black;
     margin-bottom: 20px;
     border-radius: 10px;
-}
-
-
-.project {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s linear;
 }
 
 .project p {
@@ -239,7 +275,7 @@ li a {
 }
 
 .project:hover {
-    filter: brightness(0.4);
+    filter: brightness(0.8);
 }
 
 .my-carousel {
@@ -331,7 +367,15 @@ footer {
     font-weight: 700;
 }
 
+.escondido {
+    display: none;
+}
 
+h6 {
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
 
 @media (max-width:1400px) {
     .lamp-img {
