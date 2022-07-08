@@ -535,5 +535,9 @@ h2.on, h2.off {
     .title-projects ion-icon {
         font-size: 20px;
     }
+
+    .contact ion-icon {
+        font-size: 28px;
+    }
 }
 
