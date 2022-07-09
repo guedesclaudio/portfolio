@@ -2,6 +2,8 @@ const elementsOn = document.querySelectorAll(".on")
 const elementsOff = document.querySelectorAll(".off")
 
 
+setInterval(() => document.querySelector(".img-profile img").classList.toggle("move"), 300)
+
 function descobreTexto(element) {
     element.querySelector("p").classList.add("hidden")
     element.querySelector("h4").classList.remove("hidden")
@@ -11,8 +13,6 @@ function encobreTexto(element) {
     element.querySelector("p").classList.remove("hidden")
     element.querySelector("h4").classList.add("hidden")
 }
-
-setInterval(() => document.querySelector(".img-profile img").classList.toggle("move"), 300)
 
 function stackOn(element) {
     const stackName = element.alt
