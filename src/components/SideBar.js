@@ -9,7 +9,7 @@ export default function SideBar({displaySideBar, animationSideBar}) {
                 <a href = "https://github.com/guedesclaudio" target = "_blank">
                     <Option>GitHub</Option>
                 </a>
-                <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/">
+                <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/" target = "_blank">
                     <Option>Linkedin</Option>
                 </a>
                 <Option>Contato</Option>

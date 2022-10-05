@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import SideBar from "./SideBar";
 import Logo from "./Logo";
+import { Link } from "react-router-dom"
 
 export default function TopMenu() {
 
@@ -23,9 +24,15 @@ export default function TopMenu() {
             <Container>
                 <Logo/>
                 <Icons>
-                    <ion-icon name="logo-github"></ion-icon>
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <ion-icon name="albums-outline"></ion-icon>
+                    <a href = "https://github.com/guedesclaudio" target = "_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/" target = "_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <Link to = {"/"}>
+                        <ion-icon name="albums-outline"></ion-icon>
+                    </Link>  
                 </Icons>
                 <HiddenMenu>
                     <ion-icon name="menu-outline" onClick = {openSideBar}></ion-icon>
@@ -44,6 +51,8 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 3;
 `
 const Icons = styled.div`

@@ -1,9 +1,14 @@
-import TopMenu from "./TopMenu"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
 import "../reset/reset.css"
 
 export default function App() {
 
     return (
-        <TopMenu/>
+        <BrowserRouter>
+            <Routes>
+                <Route path = "/" element = {<Home/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
