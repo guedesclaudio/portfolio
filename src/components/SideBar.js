@@ -1,18 +1,28 @@
 import styled from "styled-components";
+import { Link, useNavigate } from "react-router-dom"
 
-export default function SideBar({displaySideBar, animationSideBar}) {
+export default function SideBar({displaySideBar, setDisplaySideBar, animationSideBar, setAnimationSideBar}) {
+
+    const navigate = useNavigate()
+
+    function open (value) {
+        navigate(value)
+        setAnimationSideBar("hidden 0.5s")
+        setTimeout(() => setDisplaySideBar("none"), 500)
+    }
 
     return (
         <Container displaySideBar = {displaySideBar} animationSideBar = {animationSideBar}>
             <Options>
-                <Option>Projetos</Option>
+                <Option onClick = {() => open("/home")}>Home</Option>
+                <Option onClick = {() => open("/projects")}>Projetos</Option>
                 <a href = "https://github.com/guedesclaudio" target = "_blank">
                     <Option>GitHub</Option>
                 </a>
                 <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/" target = "_blank">
-                    <Option>Linkedin</Option>
+                    <Option>LinkedIn</Option>
                 </a>
-                <Option>Contato</Option>
+                <Option onClick = {() => open("/contact")}>Contato</Option>
             </Options>
         </Container>
     )

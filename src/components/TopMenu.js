@@ -30,7 +30,10 @@ export default function TopMenu() {
                     <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/" target = "_blank">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
-                    <Link to = {"/"}>
+                    <Link to = {"/contact"}>
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </Link>
+                    <Link to = {"/projects"}>
                         <ion-icon name="albums-outline"></ion-icon>
                     </Link>  
                 </Icons>
@@ -38,7 +41,8 @@ export default function TopMenu() {
                     <ion-icon name="menu-outline" onClick = {openSideBar}></ion-icon>
                 </HiddenMenu>
             </Container>
-            <SideBar displaySideBar = {displaySideBar} animationSideBar = {animationSideBar}/>
+            <SideBar displaySideBar = {displaySideBar} setDisplaySideBar = {setDisplaySideBar} 
+            animationSideBar = {animationSideBar} setAnimationSideBar = {setAnimationSideBar}/>
         </>
     )
 }
