@@ -7,30 +7,32 @@ export default function SideBar() {
 
     const navigate = useNavigate()
     const {
-        displaySideBar, 
         setDisplaySideBar,
+        setAnimationSideBar,
         animationSideBar,
-        setAnimationSideBar
+        displaySideBar,
+        setIcon
     } = useContext(UserContext)
 
-    function open (value) {
-        navigate(value)
+    function openPage (route) {
+        setIcon("menu-outline")
         setAnimationSideBar("hidden 0.5s")
         setTimeout(() => setDisplaySideBar("none"), 500)
+        navigate(route)
     }
 
     return (
         <Container displaySideBar = {displaySideBar} animationSideBar = {animationSideBar}>
             <Options>
-                <Option onClick = {() => open("/")}>Home</Option>
-                <Option onClick = {() => open("/projects")}>Projetos</Option>
+                <Option onClick = {() => openPage("/")}>Home</Option>
+                <Option onClick = {() => openPage("/projects")}>Projetos</Option>
                 <a href = "https://github.com/guedesclaudio" target = "_blank">
                     <Option>GitHub</Option>
                 </a>
                 <a href = "https://www.linkedin.com/in/claudio-guedes-0144b91a5/" target = "_blank">
                     <Option>LinkedIn</Option>
                 </a>
-                <Option onClick = {() => open("/contact")}>Contato</Option>
+                <Option onClick = {() => openPage("/contact")}>Contato</Option>
             </Options>
         </Container>
     )

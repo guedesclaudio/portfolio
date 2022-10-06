@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import UserContext from "../contexts/UserContext";
 
 export default function Contact() {
+
+    const {icon} = useContext(UserContext)
 
     const [text, setText] = useState("")
 
@@ -31,8 +34,7 @@ export default function Contact() {
                 <a href = "" onMouseMove = {() => MouseMove("GeekHunter")} onMouseLeave = {mouseLeave} 
                 onClick = {() => alert("GeekHunter ainda não está disponível")}>
                     <ion-icon name="globe-outline"></ion-icon>
-                </a>
-                
+                </a>  
             </Container>
             <Text>
                 {text}

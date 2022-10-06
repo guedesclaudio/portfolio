@@ -9,6 +9,11 @@ function ProjectBox({
     deploy,
     stacks
 }) {
+
+    if (deploy === "") {
+
+    }
+
     return (
         <Project>
             <ProjectBody>
@@ -19,9 +24,10 @@ function ProjectBox({
                     <a href = {`https://github.com/guedesclaudio/${repository}`} target = "_blank">
                         <ion-icon name="logo-github"></ion-icon>
                     </a>
+                    {deploy ? 
                     <a href = {deploy} target = "_blank">
                         <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                    </a>
+                    </a> : ""}
                 </Repository>
             </ProjectBody>
             <Stacks>
