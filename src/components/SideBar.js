@@ -1,9 +1,17 @@
 import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
+import { useContext } from "react";
+import UserContext from "../contexts/UserContext";
 
-export default function SideBar({displaySideBar, setDisplaySideBar, animationSideBar, setAnimationSideBar}) {
+export default function SideBar() {
 
     const navigate = useNavigate()
+    const {
+        displaySideBar, 
+        setDisplaySideBar,
+        animationSideBar,
+        setAnimationSideBar
+    } = useContext(UserContext)
 
     function open (value) {
         navigate(value)
@@ -14,7 +22,7 @@ export default function SideBar({displaySideBar, setDisplaySideBar, animationSid
     return (
         <Container displaySideBar = {displaySideBar} animationSideBar = {animationSideBar}>
             <Options>
-                <Option onClick = {() => open("/home")}>Home</Option>
+                <Option onClick = {() => open("/")}>Home</Option>
                 <Option onClick = {() => open("/projects")}>Projetos</Option>
                 <a href = "https://github.com/guedesclaudio" target = "_blank">
                     <Option>GitHub</Option>

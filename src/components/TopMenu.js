@@ -1,20 +1,29 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import SideBar from "./SideBar";
 import Logo from "./Logo";
 import { Link } from "react-router-dom"
+import UserContext from "../contexts/UserContext";
 
 export default function TopMenu() {
 
-    const [displaySideBar, setDisplaySideBar] = useState("none")
-    const [animationSideBar, setAnimationSideBar] = useState("none")
-
+    const {
+        displaySideBar, 
+        setDisplaySideBar, 
+        setAnimationSideBar,
+        icon,
+        setIcon
+    } = useContext(UserContext)
+    
+    
     function openSideBar() {
         if (displaySideBar === "none") {
             setDisplaySideBar("flex")
             setAnimationSideBar("show 0.5s")
+            setTimeout(() => setIcon("close-circle-outline"), 200)
             return
         }
+        setIcon("menu-outline")
         setAnimationSideBar("hidden 0.5s")
         setTimeout(() => setDisplaySideBar("none"), 500)
     }
@@ -38,11 +47,10 @@ export default function TopMenu() {
                     </Link>  
                 </Icons>
                 <HiddenMenu>
-                    <ion-icon name="menu-outline" onClick = {openSideBar}></ion-icon>
+                    <ion-icon name = {icon} onClick = {openSideBar}></ion-icon>
                 </HiddenMenu>
             </Container>
-            <SideBar displaySideBar = {displaySideBar} setDisplaySideBar = {setDisplaySideBar} 
-            animationSideBar = {animationSideBar} setAnimationSideBar = {setAnimationSideBar}/>
+            <SideBar/>
         </>
     )
 }
@@ -74,7 +82,6 @@ const Icons = styled.div`
 
     @media (max-width: 460px) {
         display: none;
-        
     }
 `
 const HiddenMenu = styled.div`
@@ -82,7 +89,7 @@ const HiddenMenu = styled.div`
     color: white;
     font-size: 24px;
     margin-right: 20px;
-
+    
     @media (max-width: 460px) {
         display: flex;
     }

@@ -1,16 +1,29 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
+import { useContext } from "react";
+import UserContext from "../contexts/UserContext";
+
 
 export default function ButtonProjects() {
 
+    const navigate = useNavigate()
+    const {
+        setDisplaySideBar, 
+        setAnimationSideBar,
+        setIcon
+    } = useContext(UserContext)
+
+    function onPage(route) {
+        setIcon("menu-outline")
+        setAnimationSideBar("hidden 0.5s")
+        setTimeout(() => setDisplaySideBar("none"), 500)
+        navigate(route)
+    }
+
     return (
         <Container>
-            <Link to = {"/projects"}>
-                <Button>Ver projetos</Button>
-            </Link>
-            <Link to = {"/contact"}>
-                <Button>Contato</Button>
-            </Link>
+            <Button onClick = {() => onPage("/projects")}>Ver projetos</Button>
+            <Button onClick = {() => onPage("/contact")}>Contato</Button>
         </Container>
     )
 }
