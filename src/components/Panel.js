@@ -12,7 +12,7 @@ export default function Panel() {
                 <SubTitle>Meu nome é Cláudio Guedes</SubTitle>
                 <Description>
                     Sou desenvolvedor full stack júnior.
-                    Tenho experiência com aplicações web (SPA e Api Rest) utilizando principalmente React, Node.js, MongoDB e PostgreSQL. 
+                    Tenho experiência com aplicações web (SPA, REST API, CRUD) utilizando principalmente React, Node.js, MongoDB e PostgreSQL. 
                 </Description>
                 <Description>
                     Estou concluindo o curso de Oceanografia na UERJ, e foi através da faculdade que surgiu a minha paixão por programação.
