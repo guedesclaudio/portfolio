@@ -1,7 +1,10 @@
 const projectsData = [
+    {name: "Linkr", description: "Aplicação web para uma rede social de compartilhamento de links", 
+    category: "Full-stack", repository: "linkr-front", deploy: "http://linkr-gules-sigma.vercel.app/", 
+    stacks: "JavaScript, React, Node.js, Express, PosgreSQL, Vercel, Heroku, Git, Linux"},
     {name: "My Wallet", description: "Aplicação web para controle de finanças pessoais", 
     category: "Full-stack", repository: "my-wallet", deploy: "https://my-wallet-taupe.vercel.app/", 
-    stacks: "HTML 5, CSS3, JavaScript, React, Node.js, Express, MongoDB, Mongo Atlas, Vercel, Heroku, Git, Linux"},
+    stacks: "JavaScript, React, Node.js, Express, MongoDB, Mongo Atlas, Vercel, Heroku, Git, Linux"},
     {name: "TrackIt", description: "Aplicação web para gerenciamento de tarefas diárias", 
     category: "Front-end", repository: "trackIt", deploy: "https://track-it-sable.vercel.app/", 
     stacks: "HTML 5, CSS3, JavaScript, React, Vercel, Git, Linux"},
