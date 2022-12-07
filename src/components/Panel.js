@@ -11,13 +11,13 @@ export default function Panel() {
                 <Title>Olá, pessoal</Title>
                 <SubTitle>Meu nome é Cláudio Guedes</SubTitle>
                 <Description>
-                    Sou desenvolvedor full stack júnior.
-                    Tenho experiência com aplicações web (SPA, REST API, CRUD) utilizando principalmente React, Node.js, MongoDB e PostgreSQL. 
+                    Sou desenvolvedor full stack com experiência em aplicações web utilizando principalmente React e Node.js, 
+                    prática em testes de integração e unitários, arquiterura de software e qualidade de código. 
                 </Description>
                 <Description>
                     Estou concluindo o curso de Oceanografia na UERJ, e foi através da faculdade que surgiu a minha paixão por programação.
                     Graças a Oceanografia pude ter uma boa base em áreas como Física, Cálculo, Estatística e Lógica de programação. 
-                    Sendo assim pude usar esses conhecimentos na minha nova caminhada. Meus próximos desafios são aprender TypeScript e AWS.
+                    Sendo assim pude usar esses conhecimentos na minha nova caminhada. Meus próximos desafios são aprender Docker e AWS.
                 </Description>
             </PanelRight>
         </Container>
@@ -85,7 +85,7 @@ const SubTitle = styled.h2`
     }
 `
 const Description = styled.p`
-    margin-top: 20px 10px 10px 20px;
+    margin-top: 10px 10px 10px 20px;
     line-height: 30px;
     font-size: 20px;
     padding: 20px;

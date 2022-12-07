@@ -19,6 +19,8 @@ export default function Stacks() {
         name : "CSS 3"},
         {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
         name : "JavaScript"},
+        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+        name : "TypeScript"},
         {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
         name : "React"},
         {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
@@ -30,7 +32,7 @@ export default function Stacks() {
         {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
         name : "Git"},
         {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
-        name : "Linux"},
+        name : "Linux"}
     ]
 
     return (
