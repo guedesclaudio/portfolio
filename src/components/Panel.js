@@ -11,8 +11,8 @@ export default function Panel() {
                 <Title>Olá, pessoal</Title>
                 <SubTitle>Meu nome é Cláudio Guedes</SubTitle>
                 <Description>
-                    Sou desenvolvedor full stack com experiência em aplicações web utilizando principalmente React e Node.js, 
-                    prática em testes de integração e unitários, arquiterura de software e qualidade de código. 
+                    Sou desenvolvedor full stack com experiência em aplicações web utilizando principalmente React e Node.js. Possuo 
+                    prática em testes de integração, arquiterura de software e metodologias ágeis. 
                 </Description>
                 <Description>
                     Estou concluindo o curso de Oceanografia na UERJ, e foi através da faculdade que surgiu a minha paixão por programação.
