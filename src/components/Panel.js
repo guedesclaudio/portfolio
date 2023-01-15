@@ -16,8 +16,9 @@ export default function Panel() {
                 </Description>
                 <Description>
                     Estou concluindo o curso de Oceanografia na UERJ, e foi através da faculdade que surgiu a minha paixão por programação.
-                    Graças a Oceanografia pude ter uma boa base em áreas como Física, Cálculo, Estatística e Lógica de programação. 
-                    Sendo assim pude usar esses conhecimentos na minha nova caminhada. Meus próximos desafios são aprender Docker e AWS.
+                    Graças a Oceanografia pude ter uma boa base em áreas como Física, Cálculo, Estatística, Lógica de programação e Fundamentos da Computação. 
+                    Sendo assim pude usar esses conhecimentos na minha nova caminhada e decidi ingressar na formação Full Stack da Driven Education (9-10
+                    meses), a qual estou prestes a me formar. 
                 </Description>
             </PanelRight>
         </Container>
@@ -85,10 +86,10 @@ const SubTitle = styled.h2`
     }
 `
 const Description = styled.p`
-    margin-top: 10px 10px 10px 20px;
-    line-height: 30px;
+    margin-top: 0px;
+    line-height: 25px;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px 10px 0px 20px;
     font-family: 'Roboto', sans-serif;
     color: grey;
 
