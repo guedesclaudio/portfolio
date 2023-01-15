@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { stacks } from "../services.js/stacks";
 
 function Stack({source, name}) {
 
@@ -11,30 +12,6 @@ function Stack({source, name}) {
 }
 
 export default function Stacks() {
-
-    const stacks = [
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-        name : "HTML 5"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
-        name : "CSS 3"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-        name : "JavaScript"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-        name : "TypeScript"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
-        name : "React"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-        name : "Node.js"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-        name : "MongoDB"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
-        name : "PostgreSQL"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
-        name : "Git"},
-        {source: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
-        name : "Linux"}
-    ]
-
     return (
         <Container>
             {stacks.map((value, index) => <Stack key = {index} source = {value.source} name = {value.name}/>)}
