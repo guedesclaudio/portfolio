@@ -12,10 +12,10 @@ export default function Panel() {
                 <SubTitle>Meu nome é Cláudio Guedes</SubTitle>
                 <Description>
                     Sou desenvolvedor full stack com experiência em aplicações web utilizando principalmente React e Node.js. Possuo 
-                    prática em testes de integração, arquiterura de software e metodologias ágeis. 
+                    prática em testes automatizados, arquitetura de software e metodologias ágeis. 
                 </Description>
                 <Description>
-                    Estou concluindo o curso de Oceanografia na UERJ, e foi através da faculdade que surgiu a minha paixão por programação.
+                    Estou concluindo o curso de Oceanografia na UERJ, e foi lá que surgiu a minha paixão por programação.
                     Graças a Oceanografia pude ter uma boa base em áreas como Física, Cálculo, Estatística, Lógica de programação e Fundamentos da Computação. 
                     Sendo assim pude usar esses conhecimentos na minha nova caminhada e decidi ingressar na formação Full Stack da Driven Education (9-10
                     meses), a qual estou prestes a me formar. 
