@@ -1,4 +1,7 @@
 const projectsData = [
+    {name: "Ocean Report", description: "Software gerenciador de reports sobre as condições ocêanicas das praias do Rio de Janeiro", 
+    category: "Full-stack", repository: "oceanreport-frontend", deploy: false, 
+    stacks: "TypeScript, React, Node.js, Express, PosgreSQL, Redis, Docker, Vercel, Git, Linux"},
     {name: "Manger System", description: "Aplicação web realizada para um cliente, com objetivo de ser um gerenciador de produtos e dados de clientes", 
     category: "Full-stack", repository: "managersystem-backend", deploy: false, 
     stacks: "JavaScript, React, Node.js, Express, PosgreSQL, Vercel, Render, Git, Linux"},
